@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Avenir-85-Heavy";
+    src: local("Avenir-85-Heavy"),
+    url("./assets/fonts/Avenir-85-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BrandonGrotesque";
+    src: local("BrandonGrotesque"),
+    url("./assets/fonts/BrandonGrotesque-Light.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: #0e2096;
+    color: #FFFFFF;
+    font-family: "Avenir-85-Heavy";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    width: 100%;
+    scroll-behavior:smooth
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+:root {
+    --font_1: normal normal normal 80px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_2: normal normal normal 40px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_3: normal normal normal 80px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_4: normal normal normal 60px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_5: normal normal normal 28px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_6: normal normal normal 21px/1.4em "Avenir-85-Heavy","Avenir-85-Heavy",sans-serif;
+    --font_7: normal normal normal 21px/1.4em "BrandonGrotesque","BrandonGrotesque",sans-serif;
+    --font_8: normal normal normal 18px/1.4em "BrandonGrotesque","BrandonGrotesque",sans-serif;
+}
+
+h1 {
+    font: var(--font_1)
+}
+h2 {
+    font: var(--font_2)
+}
+h3 {
+    font: var(--font_1)
+}
+h4 {
+    font: var(--font_4)
+}
+h5 {
+    font: var(--font_5)
+}
+h6 {
+    font: var(--font_6)
+}
+p {
+    font: var(--font_7)
+}
+
+span, input, textarea {
+    font: var(--font_8)
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 31px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    h3 {
+        font-size: 55px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 17px;
+    }
+}
+
+
+
