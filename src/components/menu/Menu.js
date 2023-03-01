@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {sectionsNames} from '../../assets/content/index'
 import {sections} from '../../assets/content/info/texts'
 import {ReactComponent as CloseIcon} from "../../assets/images/close.svg";
 
@@ -117,6 +116,15 @@ const Section = styled.li`
     }
   }
 `
+
+const sectionsNames = [
+  "HOME",
+  "ABOUT",
+  "PROJECTS",
+  "SERVICES",
+  "CLIENTS",
+  "CONTACT",
+]
 
 export const Menu = ({closeMenu}) => {
   return (

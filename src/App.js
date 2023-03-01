@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Route } from 'react-router-dom';
 import {termsAndConditionsTexts, privacyPolicyTexts} from "./assets/content/info/conditions";
 import Home from "./pages/home/Home";
 import Conditions from "./pages/conditions/Conditions";
@@ -19,12 +19,17 @@ export const conditions = (type) => `/conditions/${type}`
 
 const App = () => {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path={conditions(':type')} element={<Conditions />} />
-          <Route path="/" element={<Home/>} />
-        </Routes>
-      </BrowserRouter>
+      <HashRouter>
+        <Route
+            exact
+            path='/'
+            component={Home}
+        />
+          <Route
+              path={conditions(':type')}
+              component={Conditions}
+          />
+      </HashRouter>
   )
 }
 

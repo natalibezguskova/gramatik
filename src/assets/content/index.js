@@ -1,7 +1,5 @@
 import {sections, sectionsData} from "./info/texts";
 
-export const sectionsNames = Object.values(sections)
-
 export const content = {
   firstSection: sectionsData[sections.HOME],
   secondSection: sectionsData[sections.ABOUT],
