@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from 'react-router-hash-link';
 import styled from "styled-components";
 import {sections} from '../../assets/content/info/texts'
 import {ReactComponent as CloseIcon} from "../../assets/images/close.svg";
@@ -137,7 +138,9 @@ export const Menu = ({closeMenu}) => {
         <Container>
           <CloseButton onClick={closeMenu}><CloseIcon /></CloseButton>
           <SectionsList>
-            {sectionsNames.map((item) => <Section key={item} id={item} onClick={closeMenu}><a href={`#${item}`}>{item}</a></Section>)}
+            {sectionsNames.map((item) => <Section key={item} id={item} onClick={closeMenu}>
+              <HashLink to={`#${item}`}>{item}</HashLink>
+            </Section>)}
           </SectionsList>
         </Container>
       </StyledMenu>

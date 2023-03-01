@@ -110,7 +110,7 @@ const NotAnimatedSection = ({id, data, backgroundColor, backgroundImage, opacity
 export const Sections = () => {
 
   const sectionsWithData = useMemo(() => (Object.values(content)).map((el, index) => ({
-    id: el.id,
+    id: `#${el.id}`,
     data: {...el},
     ...sectionsUI[index],
   })), [])
